@@ -40,7 +40,7 @@ const Productdetails = () => {
           <div className="col-span-1">
             <img
               src={currentProduct.image}
-              className="h-[200px] md:w-3/7 block mb-5 md:mb-0 md:mx-auto"
+              className="h-[200px] md:h-auto md:w-3/4 block mb-5 md:mb-0 md:mx-auto"
               alt={currentProduct.title}
             />
           </div>
