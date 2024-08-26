@@ -8,12 +8,12 @@ import useCartStore from "../store/useCartStore";
 import toast from "react-hot-toast";
 
 const Productdetails = () => {
-  const { productId } = useParams();
+  const { productSlug } = useParams();
   const { products } = useProductStore();
   const { carts, addCart } = useCartStore();
 
   // Find the current product
-  const currentProduct = products.find((product) => product.id === parseInt(productId));
+  const currentProduct = products.find((product) => product.slug === productSlug);
   
   // Check if the product is in the cart
   const isInCart = carts.some((cart) => cart.productId === currentProduct.id);

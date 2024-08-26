@@ -13,6 +13,7 @@ const ProductCard = ({
     price,
     image,
     rating: { rate },
+    slug
   },
 
 
@@ -39,7 +40,7 @@ const ProductCard = ({
   }
 
   const handleOpenDetails = () => {
-    navigate(`product-details/${id}`);
+    navigate(`product-details/${slug}`);
   }
 
   return (
